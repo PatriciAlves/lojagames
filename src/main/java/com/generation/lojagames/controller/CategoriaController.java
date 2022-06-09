@@ -29,7 +29,7 @@ public class CategoriaController {
 	private CategoriaRepository cat;
 	
 	// Lista todos os produtos
-		@GetMapping
+		@GetMapping("/all")
 		public ResponseEntity<List<Categoria>> getAll() {
 			return ResponseEntity.ok(cat.findAll());
 		}
