@@ -59,5 +59,8 @@ public class Produto {
 	@JsonIgnoreProperties("postagem")
 	public Usuario usuario;
 	
+	@Column(columnDefinition = "integer default 0")
+	public int curtir;
+	
 
 }
